@@ -16,17 +16,15 @@
 			background-color: #fafafa;
 			color: #333;
 		}
-		span {
-			display: block;
-			padding: 2rem 0;
+		.block {
+			padding: 4rem 0;
 		}
-		span:first-child {
-			margin-top: 0;
-			padding-top: 2rem;
-		}
-		span:nth-child(odd){
+		.block:nth-child(odd){
 			background-color: #222;
 			color: #fff;
+		}
+		span {
+			display: block;
 		}
 		a {
 			color: #bada55;
@@ -35,15 +33,33 @@
 	</style>
 </head>
 <body>
-		<span data-wow-delay="1s" class="wow zoomIn"><a href="https://cssanimation.rocks/courses/animation-101/">CSS Animation 101</a></span>
-		<span data-wow-delay="1s" class="wow zoomInDown">teaches how to</span>
-		<span data-wow-delay="1s" class="wow rotateIn">simply</span>
-		<span data-wow-delay="1s" class="wow fadeInUp">animate your webpages</span>
-		<span data-wow-delay="1s" class="wow bounce">on scroll</span>
-		<span data-wow-delay="1s" class="wow zoomIn">using</span>
-		<span data-wow-delay="1s" class="wow jackInTheBox"><a href="https://github.com/matthieua/WOW">wow.js</a></span>
-		<span data-wow-delay="1s" class="wow swing">and</span>
-		<span data-wow-delay="1s" class="wow rotateIn"><a href="https://daneden.github.io/animate.css/">animate.css</a></span>
+		<div class="block">
+			<span data-wow-delay=".3s" class="wow zoomIn"><a href="https://cssanimation.rocks/courses/animation-101/">CSS Animation 101</a></span>
+		</div>
+		<div class="block">
+			<span data-wow-delay=".3s" class="wow zoomInDown">teaches how to</span>
+		</div>
+		<div class="block">
+			<span data-wow-delay=".3s" class="wow rotateIn">simply</span>
+		</div>
+		<div class="block">
+			<span data-wow-delay=".3s" class="wow fadeInUp">animate your webpages</span>
+		</div>
+		<div class="block">
+			<span data-wow-delay=".3s" class="wow bounce">on scroll</span>
+		</div>
+		<div class="block">
+			<span data-wow-delay=".3s" class="wow zoomIn">using</span>
+		</div>
+		<div class="block">
+			<span data-wow-delay=".3s" class="wow jackInTheBox"><a href="https://github.com/matthieua/WOW">wow.js</a></span>
+		</div>
+		<div class="block">
+			<span data-wow-delay=".3s" class="wow swing">and</span>
+		</div>
+		<div class="block">
+			<span data-wow-delay=".3s" class="wow rotateIn"><a href="https://daneden.github.io/animate.css/">animate.css</a></span>
+		</div>
 		<script src="wow.min.js"></script>
 		<script>
     	new WOW().init();
