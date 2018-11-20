@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Animation 101 Demo</title>
+	<meta name="description" content="Demo based on CSS Animation 101 course">
+	<link rel="stylesheet" href="animate.min.css">
+	<style>
+		html {
+			font: 300 50px/1.5 "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+			text-align: center;
+			background-color: #222;
+			padding: 1rem;
+		}
+		body {
+			background-color: #fafafa;
+			color: #333;
+		}
+		span {
+			display: block;
+			padding: 2rem 0;
+		}
+		span:first-child {
+			margin-top: 0;
+			padding-top: 2rem;
+		}
+		span:nth-child(odd){
+			background-color: #222;
+			color: #fff;
+		}
+		a {
+			color: #bada55;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+		<span data-wow-delay="1s" class="wow zoomIn"><a href="https://cssanimation.rocks/courses/animation-101/">CSS Animation 101</a></span>
+		<span data-wow-delay="1s" class="wow zoomInDown">teaches how to</span>
+		<span data-wow-delay="1s" class="wow rotateIn">simply</span>
+		<span data-wow-delay="1s" class="wow fadeInUp">animate your webpages</span>
+		<span data-wow-delay="1s" class="wow bounce">on scroll</span>
+		<span data-wow-delay="1s" class="wow zoomIn">using</span>
+		<span data-wow-delay="1s" class="wow jackInTheBox"><a href="https://github.com/matthieua/WOW">wow.js</a></span>
+		<span data-wow-delay="1s" class="wow swing">and</span>
+		<span data-wow-delay="1s" class="wow rotateIn"><a href="https://daneden.github.io/animate.css/">animate.css</a></span>
+		<script src="wow.min.js"></script>
+		<script>
+    	new WOW().init();
+    </script>
+</body>
+</html>
